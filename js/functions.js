@@ -1,5 +1,6 @@
 //Функция для проверки длины строки
 const checkLength = (string = '',maxSymbols) => string.length <= maxSymbols;
+checkLength();
 
 //Функция для проверки на палиндром
 const isPalindrome = (string) => {
@@ -10,6 +11,8 @@ const isPalindrome = (string) => {
   }
   return string === invertString;
 };
+
+isPalindrome('Казак');
 
 //Функция для извлечения цифр от 0 до 9
 const exractNum = (string) => {
@@ -24,3 +27,5 @@ const exractNum = (string) => {
   }
   return result === '' ? NaN : Number(result);
 };
+
+exractNum('2023 год');
